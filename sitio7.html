@@ -1,0 +1,47 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>area de un trapecio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style3.css">
+</head>
+<body>
+<p align="center"><font size=7>A continuación podras calcular el area de un trapecio:</p></font>
+<br>
+<br>
+<form>
+<center>
+<label for="B"><font size=5>ingrese la base mayor:</lavel></font>
+<input type"text" placeholder=" la base mayor es:" id="B">
+<br>
+<label for="b"><font size=5>ingrese la base menor:</lavel></font>
+<input type"text" placeholder=" la base menores:" id="b">
+<br>
+<label for="altura"><font size=5>ingrese la altura:</lavel></font>
+<input type"text" placeholder=" la altura es:" id="altura">
+<br>
+<br>
+<input type="button" value="Calcular" onclick="calcularT()" style="width:200px; height:50px; background:#FEC0D7; color:#000000;font-size:20px;">
+<br>
+<br>
+<input id="resultado" type="text" placeholder=" el area es:" disabled size="10">
+<br>
+<br>
+<input type="reset" value="Limpiar" style="width:200px; height:50px; background:#FEC0D7; color:#000000;font-size:20px; sans-serif;">
+</center>
+</form>
+<script>
+function calcularT(){
+var numero1 = Number(document.getElementById("B").value);
+var numero2 = Number(document.getElementById("b").value);
+var numero3 = Number(document.getElementById("altura").value);
+area=((numero1+numero2)*numero3)/2
+document.getElementById("resultado").value = area;
+}
+</script>
+<img src="pensando.png">
+</body>
+</html>

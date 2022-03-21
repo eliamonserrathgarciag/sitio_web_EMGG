@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>area de un trapecio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style3.css">
+</head>
+<body>
+<p align="center"><font size=7>A continuación podras convertir millas a metros:</p></font>
+<br>
+<br>
+<form>
+<center>
+<label for="millas"><font size=5>ingrese las millas a convertir:</lavel></font>
+<input type"text" placeholder=" millas:" id="millas">
+<br>
+<br>
+<input type="button" value="Calcular" onclick="calcularM()" style="width:200px; height:50px; background:#FEC0D7; color:#000000;font-size:20px;">
+<br>
+<br>
+<input id="resultado" type="text" placeholder=" el resultado:" disabled size="10">
+<br>
+<br>
+<input type="reset" value="Limpiar" style="width:200px; height:50px; background:#FEC0D7; color:#000000;font-size:20px; sans-serif;">
+</center>
+</form>
+<script>
+function calcularM(){
+var numero1 = Number(document.getElementById("millas").value);
+conversion=(numero1)*1609
+document.getElementById("resultado").value = conversion;
+}
+</script>
+<img src="pensando.png">
+</body>
+</html>

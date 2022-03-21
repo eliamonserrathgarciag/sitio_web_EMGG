@@ -1,0 +1,53 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>euros y pesos</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style3.css">
+</head>
+<body>
+<p align="center"><font size=7>A continuación podras convertir euros a pesos y viceversa:</p></font>
+<form>
+<center>
+<label for="euros"><font size=5>ingrese los euros a convertir :</lavel></font>
+<input type"text" placeholder=" euros:" id="euros">
+<br>
+<br>
+<input type="button" value="Calcular" onclick="calcular()" style="width:200px; height:40px; background:#FEC0D7; color:#000000;font-size:20px;">
+<br>
+<br>
+<input id="resultado" type="text" placeholder="Pesos" disabled size="10">
+<br>
+<br>
+<input type="reset" value="Limpiar" style="width:200px; height:40px; background:#FEC0D7; color:#000000;font-size:20px;">
+</center>
+<img src="dolares.png"width=250 heigth=250 alt="dolares a pesos">
+<center>
+<label for="pesos"><font size=5>ingrese los pesos a convertir :</lavel></font>
+<input type"text" placeholder=" pesos:" id="pesos">
+<br>
+<br>
+<input type="button" value="Calcular otra vez" onclick="calcularpesos()" style="width:200px; height:40px; background:#FEC0D7; color:#000000;font-size:20px;">
+<br>
+<br>
+<input id="resultado2" type="text" placeholder="euros" disabled size="10">
+<br>
+<br>
+</center>
+</form>
+<script>
+function calcular(){
+var numero1 = Number(document.getElementById("euros").value);
+var calculo = numero1*22.50
+document.getElementById("resultado").value = calculo;
+}
+function calcularpesos(){
+var numero1 = Number(document.getElementById("pesos").value);
+var calculo = numero1/0.044
+document.getElementById("resultado2").value = calculo;
+}
+</script>
+</html>

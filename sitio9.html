@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>volumen</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style3.css">
+</head>
+<body>
+<p align="center"><font size=7>A continuación podremos obtener el volumen del prisma rectangular:</p></font>
+<br>
+<br>
+<form>
+<center>
+<label for="A"><font size=5>ingrese el area de la base:</lavel></font>
+<input type"text" placeholder=" area de la base:" id="A">
+<br>
+<label for="H"><font size=5>ingrese la altura:</lavel></font>
+<input type"text" placeholder=" altura:" id="H">
+<br>
+<br>
+<input type="button" value="Calcular" onclick="calcular()" style="width:200px; height:50px; background:#FEC0D7; color:#000000;font-size:20px;">
+<br>
+<br>
+<input id="resultado" type="text" placeholder=" el volumen es:" disabled size="10">
+<br>
+<br>
+<input type="reset" value="Limpiar" style="width:200px; height:50px; background:#FEC0D7; color:#000000;font-size:20px; sans-serif;">
+</center>
+</form>
+<script>
+function calcular(){
+var numero1 = Number(document.getElementById("A").value);
+var numero2 = Number(document.getElementById("H").value);
+volumen=numero1*numero2
+document.getElementById("resultado").value = volumen;
+}
+</script>
+<img src="pensando.png">
+</body>
+</html>

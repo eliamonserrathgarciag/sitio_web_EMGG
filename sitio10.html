@@ -1,0 +1,40 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>°C a °F</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style3.css">
+</head>
+<body>
+<p align="center"><font size=7>A continuación podremos convertir °C a °F:</p></font>
+<br>
+<br>
+<form>
+<center>
+<label for="c"><font size=5>ingrese los grados a convertir(°C):</lavel></font>
+<input type"text" placeholder=" °C:" id="c">
+<br>
+<br>
+<input type="button" value="Calcular" onclick="calcular()" style="width:200px; height:50px; background:#FEC0D7; color:#000000;font-size:20px;">
+<br>
+<br>
+<input id="resultado" type="text" placeholder=" el resultado en °F:" disabled size="10">
+<br>
+<br>
+<input type="reset" value="Limpiar" style="width:200px; height:50px; background:#FEC0D7; color:#000000;font-size:20px; sans-serif;">
+
+</center>
+</form>
+<script>
+function calcular(){
+var numero1 = Number(document.getElementById("c").value);
+f=(numero1*1.8)+32
+document.getElementById("resultado").value = f;
+}
+</script>
+<img src="pensando.png">
+</body>
+</html>

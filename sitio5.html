@@ -1,0 +1,51 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>distancia entre dos puntos</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style3.css">
+</head>
+<body>
+<p align="center"><font size=7>A continuación podras calcular la distancia entre dos puntos:</p></font>
+<br>
+<br>
+<form>
+<center>
+<label for="x1"><font size=5>ingrese x1:</lavel></font>
+<input type"text" placeholder=" latitud:" id="x1">
+<br>
+<label for="x2"><font size=5>ingrese x2:</lavel></font>
+<input type"text" placeholder=" longitud:" id="x2">
+<br>
+<label for="y1"><font size=5>ingrese y1:</lavel></font>
+<input type"text" placeholder=" latitud:" id="y1">
+<br>
+<label for="y2"><font size=5>ingrese y2:</lavel></font>
+<input type"text" placeholder=" longitud:" id="y2">
+<br>
+<br>
+<input type="button" value="Calcular" onclick="calcularD()" style="width:200px; height:50px; background:#FEC0D7; color:#000000;font-size:20px;">
+<br>
+<br>
+<input id="resultado" type="text" placeholder=" la distancia es:" disabled size="15">
+<br>
+<br>
+<input type="reset" value="Limpiar" style="width:200px; height:50px; background:#FEC0D7; color:#000000;font-size:20px; sans-serif;">
+</center>
+</form>
+<script>
+function calcularD(){
+var numero1 = Number(document.getElementById("x1").value);
+var numero2 = Number(document.getElementById("x2").value);
+var numero3 = Number(document.getElementById("y1").value);
+var numero4 = Number(document.getElementById("y2").value);
+Distancia= Math. sqrt((numero2-numero1)**2+(numero4-numero3)**2) 
+document.getElementById("resultado").value = Distancia;
+}
+</script>
+<img src="pensando.png">
+</body>
+</html>
